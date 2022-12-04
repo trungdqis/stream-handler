@@ -1,0 +1,57 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(;Test/compile; collectAnalyses, None, Some(CommandSource(network-3)))[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched Processing event for requestId None: None[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched Done event for requestId None: None[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(Test/compile, None, Some(CommandSource(network-3)))[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched Processing event for requestId None: None[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Test / compile[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/taskStart, {"taskId":{"id":"4","parents":[]},"eventTime":1670087802578,"message":"Compiling streamhandler","dataKind":"compile-task","data":{"target":{"uri":"file:/home/trungdq/StreamHandler/#streamhandler/Compile"}}})[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /home/trungdq/StreamHandler/target/scala-2.12/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":3,"message":"compiling 1 Scala source to /home/trungdq/StreamHandler/target/scala-2.12/classes ..."})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/publishDiagnostics, {"textDocument":{"uri":"file:///home/trungdq/StreamHandler/src/main/scala/StreamHandler.scala"},"buildTarget":{"uri":"file:/home/trungdq/StreamHandler/#streamhandler/Compile"},"diagnostics":[{"range":{"start":{"line":0,"character":11},"end":{"line":0,"character":12}},"severity":1,"source":"sbt","message":"object apache is not a member of package org"}],"reset":false})[0m
+[0m[[0m[31merror[0m] [0m[0m/home/trungdq/StreamHandler/src/main/scala/StreamHandler.scala:1:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.sql._[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"/home/trungdq/StreamHandler/src/main/scala/StreamHandler.scala:1:12: object apache is not a member of package org"})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"import org.apache.spark.sql._"})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"           ^"})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/publishDiagnostics, {"textDocument":{"uri":"file:///home/trungdq/StreamHandler/src/main/scala/StreamHandler.scala"},"buildTarget":{"uri":"file:/home/trungdq/StreamHandler/#streamhandler/Compile"},"diagnostics":[{"range":{"start":{"line":1,"character":11},"end":{"line":1,"character":12}},"severity":1,"source":"sbt","message":"object apache is not a member of package org"}],"reset":false})[0m
+[0m[[0m[31merror[0m] [0m[0m/home/trungdq/StreamHandler/src/main/scala/StreamHandler.scala:2:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.sql.functions._[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"/home/trungdq/StreamHandler/src/main/scala/StreamHandler.scala:2:12: object apache is not a member of package org"})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"import org.apache.spark.sql.functions._"})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"           ^"})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/publishDiagnostics, {"textDocument":{"uri":"file:///home/trungdq/StreamHandler/src/main/scala/StreamHandler.scala"},"buildTarget":{"uri":"file:/home/trungdq/StreamHandler/#streamhandler/Compile"},"diagnostics":[{"range":{"start":{"line":2,"character":11},"end":{"line":2,"character":12}},"severity":1,"source":"sbt","message":"object apache is not a member of package org"}],"reset":false})[0m
+[0m[[0m[31merror[0m] [0m[0m/home/trungdq/StreamHandler/src/main/scala/StreamHandler.scala:3:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.sql.streaming._[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"/home/trungdq/StreamHandler/src/main/scala/StreamHandler.scala:3:12: object apache is not a member of package org"})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"import org.apache.spark.sql.streaming._"})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"           ^"})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/publishDiagnostics, {"textDocument":{"uri":"file:///home/trungdq/StreamHandler/src/main/scala/StreamHandler.scala"},"buildTarget":{"uri":"file:/home/trungdq/StreamHandler/#streamhandler/Compile"},"diagnostics":[{"range":{"start":{"line":3,"character":11},"end":{"line":3,"character":12}},"severity":1,"source":"sbt","message":"object apache is not a member of package org"}],"reset":false})[0m
+[0m[[0m[31merror[0m] [0m[0m/home/trungdq/StreamHandler/src/main/scala/StreamHandler.scala:4:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.sql.types._[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"/home/trungdq/StreamHandler/src/main/scala/StreamHandler.scala:4:12: object apache is not a member of package org"})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"import org.apache.spark.sql.types._"})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"           ^"})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/publishDiagnostics, {"textDocument":{"uri":"file:///home/trungdq/StreamHandler/src/main/scala/StreamHandler.scala"},"buildTarget":{"uri":"file:/home/trungdq/StreamHandler/#streamhandler/Compile"},"diagnostics":[{"range":{"start":{"line":7,"character":20},"end":{"line":7,"character":21}},"severity":1,"source":"sbt","message":"not found: value SparkSession"}],"reset":false})[0m
+[0m[[0m[31merror[0m] [0m[0m/home/trungdq/StreamHandler/src/main/scala/StreamHandler.scala:8:21: not found: value SparkSession[0m
+[0m[[0m[31merror[0m] [0m[0m        val spark = SparkSession[0m
+[0m[[0m[31merror[0m] [0m[0m                    ^[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"/home/trungdq/StreamHandler/src/main/scala/StreamHandler.scala:8:21: not found: value SparkSession"})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"        val spark = SparkSession"})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"                    ^"})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/taskProgress, {"taskId":{"id":"4","parents":[]},"eventTime":1670087803226,"message":"Compiling streamhandler (15%)","total":26,"progress":15,"dataKind":"compile-progress","data":{"target":{"uri":"file:/home/trungdq/StreamHandler/#streamhandler/Compile"}}})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/taskProgress, {"taskId":{"id":"4","parents":[]},"eventTime":1670087803226,"message":"Compiling streamhandler (15%)","total":26,"progress":15,"dataKind":"compile-progress","data":{"target":{"uri":"file:/home/trungdq/StreamHandler/#streamhandler/Compile"}}})[0m
+[0m[[0m[31merror[0m] [0m[0m5 errors found[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"5 errors found"})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/publishDiagnostics, {"textDocument":{"uri":"file:///home/trungdq/StreamHandler/src/main/scala/StreamHandler.scala"},"buildTarget":{"uri":"file:/home/trungdq/StreamHandler/#streamhandler/Compile"},"diagnostics":[{"range":{"start":{"line":0,"character":11},"end":{"line":0,"character":12}},"severity":1,"source":"sbt","message":"object apache is not a member of package org"},{"range":{"start":{"line":1,"character":11},"end":{"line":1,"character":12}},"severity":1,"source":"sbt","message":"object apache is not a member of package org"},{"range":{"start":{"line":2,"character":11},"end":{"line":2,"character":12}},"severity":1,"source":"sbt","message":"object apache is not a member of package org"},{"range":{"start":{"line":3,"character":11},"end":{"line":3,"character":12}},"severity":1,"source":"sbt","message":"object apache is not a member of package org"},{"range":{"start":{"line":7,"character":20},"end":{"line":7,"character":21}},"severity":1,"source":"sbt","message":"not found: value SparkSession"}],"reset":true})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/taskFinish, {"taskId":{"id":"4","parents":[]},"eventTime":1670087803247,"message":"Compiled streamhandler","status":2,"dataKind":"compile-report","data":{"target":{"uri":"file:/home/trungdq/StreamHandler/#streamhandler/Compile"},"errors":5,"warnings":0,"time":669}})[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched json error for requestId None: {"code":-32603,"message":"(Compile / \u001b[31mcompileIncremental\u001b[0m) Compilation failed"}[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"(Compile / \u001b[31mcompileIncremental\u001b[0m) Compilation failed"})[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 2 s, completed Dec 4, 2022 12:16:43 AM[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched Done event for requestId None: None[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m

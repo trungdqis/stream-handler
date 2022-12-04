@@ -1,0 +1,4 @@
+[0m[[0m[31merror[0m] [0m[0m/home/trungdq/StreamHandler/src/main/scala/StreamHandler.scala:41:47: not found: value id[0m
+[0m[[0m[31merror[0m] [0m[0m        val summary = userDF.withColumn("id", id)[0m
+[0m[[0m[31merror[0m] [0m[0m                                              ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

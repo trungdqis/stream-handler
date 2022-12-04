@@ -1,0 +1,46 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(;Test/compile; collectAnalyses, None, Some(CommandSource(network-1)))[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched Processing event for requestId None: None[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched Done event for requestId None: None[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(Test/compile, None, Some(CommandSource(network-1)))[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched Processing event for requestId None: None[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Test / compile[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/taskStart, {"taskId":{"id":"8","parents":[]},"eventTime":1670127304009,"message":"Compiling streamhandler","dataKind":"compile-task","data":{"target":{"uri":"file:/home/trungdq/StreamHandler/#streamhandler/Compile"}}})[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /home/trungdq/StreamHandler/target/scala-2.12/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":3,"message":"compiling 1 Scala source to /home/trungdq/StreamHandler/target/scala-2.12/classes ..."})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/publishDiagnostics, {"textDocument":{"uri":"file:///home/trungdq/StreamHandler/src/main/scala/StreamHandler.scala"},"buildTarget":{"uri":"file:/home/trungdq/StreamHandler/#streamhandler/Compile"},"diagnostics":[{"range":{"start":{"line":4,"character":28},"end":{"line":4,"character":29}},"severity":1,"source":"sbt","message":"object cassandra is not a member of package org.apache.spark.sql"}],"reset":false})[0m
+[0m[[0m[31merror[0m] [0m[0m/home/trungdq/StreamHandler/src/main/scala/StreamHandler.scala:5:29: object cassandra is not a member of package org.apache.spark.sql[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.sql.cassandra._[0m
+[0m[[0m[31merror[0m] [0m[0m                            ^[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"/home/trungdq/StreamHandler/src/main/scala/StreamHandler.scala:5:29: object cassandra is not a member of package org.apache.spark.sql"})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"import org.apache.spark.sql.cassandra._"})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"                            ^"})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/publishDiagnostics, {"textDocument":{"uri":"file:///home/trungdq/StreamHandler/src/main/scala/StreamHandler.scala"},"buildTarget":{"uri":"file:/home/trungdq/StreamHandler/#streamhandler/Compile"},"diagnostics":[{"range":{"start":{"line":5,"character":11},"end":{"line":5,"character":12}},"severity":1,"source":"sbt","message":"object datastax is not a member of package com"}],"reset":false})[0m
+[0m[[0m[31merror[0m] [0m[0m/home/trungdq/StreamHandler/src/main/scala/StreamHandler.scala:6:12: object datastax is not a member of package com[0m
+[0m[[0m[31merror[0m] [0m[0mimport com.datastax.spark.connector._[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"/home/trungdq/StreamHandler/src/main/scala/StreamHandler.scala:6:12: object datastax is not a member of package com"})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"import com.datastax.spark.connector._"})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"           ^"})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/publishDiagnostics, {"textDocument":{"uri":"file:///home/trungdq/StreamHandler/src/main/scala/StreamHandler.scala"},"buildTarget":{"uri":"file:/home/trungdq/StreamHandler/#streamhandler/Compile"},"diagnostics":[{"range":{"start":{"line":40,"character":46},"end":{"line":40,"character":47}},"severity":1,"source":"sbt","message":"type mismatch;\n found   : String(\"id\")\n required: org.apache.spark.sql.Column"}],"reset":false})[0m
+[0m[[0m[31merror[0m] [0m[0m/home/trungdq/StreamHandler/src/main/scala/StreamHandler.scala:41:47: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : String("id")[0m
+[0m[[0m[31merror[0m] [0m[0m required: org.apache.spark.sql.Column[0m
+[0m[[0m[31merror[0m] [0m[0m        val summary = userDF.withColumn("id", "id")[0m
+[0m[[0m[31merror[0m] [0m[0m                                              ^[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"/home/trungdq/StreamHandler/src/main/scala/StreamHandler.scala:41:47: type mismatch;\n found   : String(\"id\")\n required: org.apache.spark.sql.Column"})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"        val summary = userDF.withColumn(\"id\", \"id\")"})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"                                              ^"})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/taskProgress, {"taskId":{"id":"8","parents":[]},"eventTime":1670127304503,"message":"Compiling streamhandler (15%)","total":26,"progress":15,"dataKind":"compile-progress","data":{"target":{"uri":"file:/home/trungdq/StreamHandler/#streamhandler/Compile"}}})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/taskProgress, {"taskId":{"id":"8","parents":[]},"eventTime":1670127304503,"message":"Compiling streamhandler (15%)","total":26,"progress":15,"dataKind":"compile-progress","data":{"target":{"uri":"file:/home/trungdq/StreamHandler/#streamhandler/Compile"}}})[0m
+[0m[[0m[31merror[0m] [0m[0mthree errors found[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"three errors found"})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/publishDiagnostics, {"textDocument":{"uri":"file:///home/trungdq/StreamHandler/src/main/scala/StreamHandler.scala"},"buildTarget":{"uri":"file:/home/trungdq/StreamHandler/#streamhandler/Compile"},"diagnostics":[{"range":{"start":{"line":4,"character":28},"end":{"line":4,"character":29}},"severity":1,"source":"sbt","message":"object cassandra is not a member of package org.apache.spark.sql"},{"range":{"start":{"line":5,"character":11},"end":{"line":5,"character":12}},"severity":1,"source":"sbt","message":"object datastax is not a member of package com"},{"range":{"start":{"line":40,"character":46},"end":{"line":40,"character":47}},"severity":1,"source":"sbt","message":"type mismatch;\n found   : String(\"id\")\n required: org.apache.spark.sql.Column"}],"reset":true})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/taskFinish, {"taskId":{"id":"8","parents":[]},"eventTime":1670127304520,"message":"Compiled streamhandler","status":2,"dataKind":"compile-report","data":{"target":{"uri":"file:/home/trungdq/StreamHandler/#streamhandler/Compile"},"errors":3,"warnings":0,"time":511}})[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched json error for requestId None: {"code":-32603,"message":"(Compile / \u001b[31mcompileIncremental\u001b[0m) Compilation failed"}[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"(Compile / \u001b[31mcompileIncremental\u001b[0m) Compilation failed"})[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 1 s, completed Dec 4, 2022 11:15:04 AM[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched Done event for requestId None: None[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
+                                                                                                                             

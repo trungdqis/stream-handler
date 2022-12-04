@@ -1,0 +1,13 @@
+[0m[[0m[0mdebug[0m] [0m[0mPackaging /home/trungdq/StreamHandler/target/scala-2.12/stream-handler_2.12-1.0.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UserData$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/trungdq/StreamHandler/target/scala-2.12/classes/UserData$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UserData.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/trungdq/StreamHandler/target/scala-2.12/classes/UserData.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	StreamHandler$$typecreator14$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/trungdq/StreamHandler/target/scala-2.12/classes/StreamHandler$$typecreator14$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	StreamHandler$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/trungdq/StreamHandler/target/scala-2.12/classes/StreamHandler$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	StreamHandler.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/trungdq/StreamHandler/target/scala-2.12/classes/StreamHandler.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m
