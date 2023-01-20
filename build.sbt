@@ -7,5 +7,5 @@ scalaVersion := "2.12.15"
 libraryDependencies ++= Seq (
     "org.apache.spark" %% "spark-core" % "3.3.1" % "provided",
     "org.apache.spark" %% "spark-sql" % "3.3.1" % "provided",
-    "com.datastax.spark" %% "spark-cassandra-connector-assembly" % "3.2.0"
+    "mysql" % "mysql-connector-java" % "8.0.28"
 )

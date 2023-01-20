@@ -1,4 +1,11 @@
-[0m[[0m[31merror[0m] [0m[0m/home/trungdq/StreamHandler/src/main/scala/StreamHandler.scala:41:47: not found: value id[0m
-[0m[[0m[31merror[0m] [0m[0m        val summary = userDF.withColumn("id", id)[0m
-[0m[[0m[31merror[0m] [0m[0m                                              ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m/home/trungdq/StreamHandler/src/main/scala/StreamHandler.scala:71:33: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : org.apache.spark.sql.Column[0m
+[0m[[0m[31merror[0m] [0m[0m required: Boolean[0m
+[0m[[0m[31merror[0m] [0m[0m        if (ordersDF("orderId").isNotNull) {[0m
+[0m[[0m[31merror[0m] [0m[0m                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/trungdq/StreamHandler/src/main/scala/StreamHandler.scala:103:38: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : org.apache.spark.sql.Column[0m
+[0m[[0m[31merror[0m] [0m[0m required: Boolean[0m
+[0m[[0m[31merror[0m] [0m[0m        if (orderDetailDF("orderId").isNotNull) {[0m
+[0m[[0m[31merror[0m] [0m[0m                                     ^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
